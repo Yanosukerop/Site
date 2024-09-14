@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f3f4f6; / Couleur de fond claire et élégante /
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); / Ombre douce /
+}
+
+h1 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/ Image au-dessus du bouton Oui /
+.above-yes {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px; / Ajuste la taille de l'image /
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); / Ajout d'une ombre légère à l'image /
+}
+
+/ Styles des boutons /
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #4caf50; / Couleur verte moderne pour le bouton Oui /
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease; / Transition douce pour les interactions /
+}
+
+button:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); / Légère élévation au survol /
+}
+
+#noBtn {
+    background-color: #ff5252; / Couleur rouge pour le bouton Non /
+    position: relative;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #noBtn {
+        margin-left: 0;
+    }
+}
